@@ -3,29 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cloned Website</title>
+  <title>Sweet Vows</title>
   <style>
-    /* Reset some default styles */
-    body, h1, h2, p, ul, li {
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    h1, h2, h3 {
       margin: 0;
       padding: 0;
     }
 
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+    a {
+      text-decoration: none;
+      color: inherit;
     }
 
     /* Header */
     header {
-      background: #333;
-      color: #fff;
+      background: #f4f4f4;
       padding: 20px;
       text-align: center;
     }
 
-    header h1 {
-      font-size: 2.5rem;
+    header nav a {
+      margin: 0 10px;
+      font-weight: bold;
     }
 
     /* Hero Section */
@@ -36,41 +44,106 @@
       text-align: center;
     }
 
-    .hero h2 {
-      font-size: 2rem;
+    .hero h1 {
+      font-size: 3rem;
       margin-bottom: 20px;
     }
 
     .hero p {
       font-size: 1.2rem;
-      margin-bottom: 20px;
     }
 
-    .hero button {
-      background: #ff6347;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-
-    /* Features Section */
-    .features {
+    /* About Section */
+    .about {
       display: flex;
       justify-content: space-around;
       padding: 50px 20px;
-      background: #f4f4f4;
+      background: #fff;
     }
 
-    .features div {
+    .about div {
       text-align: center;
-      width: 30%;
+      width: 45%;
     }
 
-    .features h3 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    /* Story Section */
+    .story {
+      padding: 50px 20px;
+      background: #f4f4f4;
+      text-align: center;
+    }
+
+    .story h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .story p {
+      font-size: 1.1rem;
+    }
+
+    /* Gallery Section */
+    .gallery {
+      padding: 50px 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+    }
+
+    /* RSVP Section */
+    .rsvp {
+      padding: 50px 20px;
+      background: #f4f4f4;
+      text-align: center;
+    }
+
+    .rsvp h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .rsvp form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .rsvp input, .rsvp select, .rsvp button {
+      margin: 10px 0;
+      padding: 10px;
+      width: 80%;
+      max-width: 400px;
+    }
+
+    /* Blogs Section */
+    .blogs {
+      padding: 50px 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .blogs h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .blogs .blog-post {
+      margin-bottom: 20px;
     }
 
     /* Footer */
@@ -80,40 +153,95 @@
       text-align: center;
       padding: 20px;
     }
+
+    footer p {
+      margin: 0;
+    }
   </style>
 </head>
 <body>
   <!-- Header -->
   <header>
-    <h1>My Cloned Website</h1>
+    <h1>Sweet Vows</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#story">Story</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#rsvp">RSVP</a>
+      <a href="#blogs">Blogs</a>
+    </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <h2>Welcome to Our Website</h2>
-    <p>We provide the best services for your needs.</p>
-    <button>Learn More</button>
+  <section class="hero" id="home">
+    <h1>William & Amelia</h1>
+    <p>10.06.2024</p>
   </section>
 
-  <!-- Features Section -->
-  <section class="features">
+  <!-- About Section -->
+  <section class="about" id="about">
     <div>
-      <h3>Feature One</h3>
-      <p>Details about feature one.</p>
+      <h2>About the Groom</h2>
+      <p>William John</p>
+      <p>Lorem ipsum dolor sit amet consectetur. Egestas consequat molestie nibh eget nullam erat cræ adipiscing.</p>
     </div>
     <div>
-      <h3>Feature Two</h3>
-      <p>Details about feature two.</p>
+      <h2>About the Bride</h2>
+      <p>Amelia Alex</p>
+      <p>Lorem ipsum dolor sit amet consectetur. Egestas consequat molestie nibh eget nullam erat cræ adipiscing.</p>
     </div>
-    <div>
-      <h3>Feature Three</h3>
-      <p>Details about feature three.</p>
+  </section>
+
+  <!-- Story Section -->
+  <section class="story" id="story">
+    <h2>Our Story</h2>
+    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque quam habitasse lectus accumsan mattis a aliquet ut.</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <h2>Our Gallery</h2>
+    <img src="https://via.placeholder.com/300" alt="Gallery Image">
+    <img src="https://via.placeholder.com/300" alt="Gallery Image">
+    <img src="https://via.placeholder.com/300" alt="Gallery Image">
+  </section>
+
+  <!-- RSVP Section -->
+  <section class="rsvp" id="rsvp">
+    <h2>Will You Attend?</h2>
+    <form>
+      <input type="text" placeholder="First Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="number" placeholder="Number of Guests" required>
+      <select>
+        <option>Meal Preferences</option>
+        <option>Vegetarian</option>
+        <option>Non-Vegetarian</option>
+      </select>
+      <button type="submit">Yes, I will be there</button>
+      <button type="submit">Sorry, I can't come</button>
+    </form>
+  </section>
+
+  <!-- Blogs Section -->
+  <section class="blogs" id="blogs">
+    <h2>Our Latest Articles</h2>
+    <div class="blog-post">
+      <h3>Two Hearts Become One</h3>
+      <p>By: Williams | 14 April, 2024</p>
+      <p>Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit.</p>
+    </div>
+    <div class="blog-post">
+      <h3>Love in Bloom</h3>
+      <p>By: Williams | 14 April, 2024</p>
+      <p>Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit.</p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2023 My Cloned Website. All rights reserved.</p>
+    <p>&copy; 2024 Sweet Vows. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
