@@ -1,174 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuristic Web Development Agency</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloned Website</title>
+  <style>
+    /* Reset some default styles */
+    body, h1, h2, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      background: #ff6347;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    /* Features Section */
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 20px;
+      background: #f4f4f4;
+    }
+
+    .features div {
+      text-align: center;
+      width: 30%;
+    }
+
+    .features h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <a href="#" class="logo">FuturDev</a>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <!-- Header -->
+  <header>
+    <h1>My Cloned Website</h1>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container">
-            <h1>Innovative Web Solutions for a Digital Future</h1>
-            <p>We design and develop cutting-edge websites that drive results.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to Our Website</h2>
+    <p>We provide the best services for your needs.</p>
+    <button>Learn More</button>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-grid">
-                <div class="service-item">
-                    <i class="fas fa-code"></i>
-                    <h3>Web Development</h3>
-                    <p>Custom web development tailored to your needs.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>Web Design</h3>
-                    <p>Modern and responsive designs that captivate users.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>SEO Optimization</h3>
-                    <p>Boost your website's visibility on search engines.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-tools"></i>
-                    <h3>Maintenance</h3>
-                    <p>Ongoing support and updates for your website.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Features Section -->
+  <section class="features">
+    <div>
+      <h3>Feature One</h3>
+      <p>Details about feature one.</p>
+    </div>
+    <div>
+      <h3>Feature Two</h3>
+      <p>Details about feature two.</p>
+    </div>
+    <div>
+      <h3>Feature Three</h3>
+      <p>Details about feature three.</p>
+    </div>
+  </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing">
-        <div class="container">
-            <h2>Pricing Plans</h2>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Basic</h3>
-                    <p class="price">$499</p>
-                    <ul>
-                        <li>5 Pages</li>
-                        <li>Responsive Design</li>
-                        <li>Basic SEO</li>
-                    </ul>
-                    <a href="#contact" class="cta-button">Choose Plan</a>
-                </div>
-                <div class="pricing-card">
-                    <h3>Standard</h3>
-                    <p class="price">$899</p>
-                    <ul>
-                        <li>10 Pages</li>
-                        <li>Advanced SEO</li>
-                        <li>CMS Integration</li>
-                    </ul>
-                    <a href="#contact" class="cta-button">Choose Plan</a>
-                </div>
-                <div class="pricing-card">
-                    <h3>Premium</h3>
-                    <p class="price">$1499</p>
-                    <ul>
-                        <li>Unlimited Pages</li>
-                        <li>E-commerce Setup</li>
-                        <li>Ongoing Support</li>
-                    </ul>
-                    <a href="#contact" class="cta-button">Choose Plan</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We are a team of passionate developers and designers dedicated to creating innovative web solutions. Our mission is to help businesses thrive in the digital world with cutting-edge technology and creative designs.</p>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <div class="container">
-            <h2>Our Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="project1.jpg" alt="Project 1">
-                    <p>E-commerce Website</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="project2.jpg" alt="Project 2">
-                    <p>Corporate Website</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="project3.jpg" alt="Project 3">
-                    <p>Blog Platform</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-item">
-                    <p>"FuturDev transformed our online presence. Highly recommended!"</p>
-                    <p class="client-name">- John Doe</p>
-                </div>
-                <div class="testimonial-item">
-                    <p>"Professional team with a futuristic approach. Great experience!"</p>
-                    <p class="client-name">- Jane Smith</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 FuturDev. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 My Cloned Website. All rights reserved.</p>
+  </footer>
 </body>
 </html>
